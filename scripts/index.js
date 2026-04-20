@@ -8,7 +8,7 @@ if (!containerEl) {
 }
 
 for (let i = 0; i < 5; i++) {
-    const postEl = compileTemplate('#post-template', {
+    const postEl = PadaOne.compileTemplate('#post-template', {
             '.card': (el => {
                 el.dataset.action = 'showPost';
                 el.dataset.actionJson = JSON.stringify({ id: 123, title: 'My Second Post' });
@@ -27,11 +27,10 @@ for (let i = 0; i < 5; i++) {
 }
 
 
-/** @type {Record<string, actionFunction>} */
 const actions = {
     showPost: (elem, data) => {
         console.log(elem, data);
     }
 };
 
-startActionEngine(actions);
+PadaOne.startActionEngine(actions);
