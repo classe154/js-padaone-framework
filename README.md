@@ -16,10 +16,21 @@ Il nome è un chiaro omaggio a Star Wars.
 
 ## Installazione
 
+### In locale
+
 Includi il file `padaone.js` nella tua pagina HTML, **prima** del tuo script applicativo:
 
 ```html
 <script src="scripts/padaone.js"></script>
+<script src="scripts/index.js"></script>
+```
+
+### Via CDN (jsDelivr)
+
+Puoi includere PadaOne direttamente da CDN senza scaricare nulla:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/classe154/js-padaone-framework@main/scripts/padaone.js"></script>
 <script src="scripts/index.js"></script>
 ```
 
